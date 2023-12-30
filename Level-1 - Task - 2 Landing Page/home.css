@@ -1,0 +1,230 @@
+html{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+nav{
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    right: 0px;
+    background-color: #353535;
+}
+.all-link{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+.slider {
+    margin-top: 30px;
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    margin-left: 15%;
+    display: flex;
+}
+
+.slide button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.slides input {
+    margin-left: 25%;
+    display: none;
+}
+
+.slide {
+    position: relative;
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 1000px;
+    height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual {
+    margin-left: 14.8%;
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #40d3dc;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div {
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: #40d3dc;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: #40d3dc;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: #40d3dc;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background: #40d3dc;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about p{
+    width: 90%;
+    align-items: center;
+    text-align: center;
+}
+#services{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#services .ac-service{
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 300px;
+}
+#contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#contact img {
+    height: 290px;
+    margin-right: 10px;
+}
+.question-ans{
+    width: 350px;
+}
+
+#appoinment{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.book {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+.book input{
+    width: 400px;
+    height: 30px;
+    margin: 5px;
+}
+
+.book button{
+    width: 400px;
+    height: 30px;
+    margin: 5px;
+}
+.customer-review{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    justify-content: center;
+    gap: 20px;
+}
+.customer{
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    border: 2px solid black;
+    align-items: center;
+    text-align: center;
+}
+.more{
+    display: none;
+    margin-top: 20px;
+    grid-template-columns: 350px 350px 350px;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
